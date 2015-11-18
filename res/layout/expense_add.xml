@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mobilehomeworktwo.MainActivity" >
+
+   <LinearLayout
+        android:id="@+id/linearLayout_expense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/label_expense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:text="@string/expense"
+            />
+
+        <EditText
+            android:id="@+id/editText_expense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:maxLength="12"
+            android:singleLine="true" 
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/linearLayout_expense"
+        >
+
+        <TextView
+            android:id="@+id/textView_note"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:text="@string/note"
+            />
+
+        <EditText
+            android:id="@+id/editText_note"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:maxLength="12"
+            android:singleLine="true" 
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout_note"
+        >
+        
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:onClick="lgLogin"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:onClick="lgLogin"
+            android:text="@string/save" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

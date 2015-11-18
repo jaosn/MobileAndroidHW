@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MobileHomeworkTwo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="expense">EXPENSE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="save">SAVE</string>
+    <string name="note">NOTE</string>
+    <string name="add">ADD</string>
+    <string name="delete">DELETE</string>
+    <string name="delete_text">DELETE ITEM</string>
+    <string name="title_activity_custom_expense">CustomExpense</string>
+    <string name="title_activity_user_input_entry">UserInputEntry</string>
+
+</resources>
